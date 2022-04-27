@@ -175,14 +175,14 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Visualizing Yelp Data -->
+                        <!-- Yelp Maps -->
                         <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="assets/voronoi.png" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge text-black bg-neon bg-gradient rounded-pill mb-2">DATABASE</div>
                                     <a class="fw-bolder a-hide-underline link-dark stretched-link"><div class="h5 card-title mb-3">Visualizing Yelp Data</div></a>
-                                    <p class="card-text mb-2">In Python, I performed object-oriented data abstraction, unsupervised learning (k-means algorithm), and supervised learning (SLS regression) to analyze and build an algorithm to predict restaurant ratings. I also created create a scalable map visualization of restaurants based on my algorithm’s predictions where restaurants are visually segmented by their ratings. I also used machine learning and list comprehensions to model, filter, and organize the Yelp academic database (5 datasets, ~10 GB total).</p>
+                                    <p class="card-text mb-2">In Python, I created a scalable map visualization of the predicted restaurant ratings using machine learning and the Yelp academic dataset for Berkeley restaurants. To predict restaurant ratings, I developed an algorithim using object-oriented data abstraction, unsupervised learning (k-means algorithm), and supervised learning (SLS regression). In the visualization above, Berkeley is segmented into regions, where each region is shaded by the predicted rating of the closest restaurant (yellow is 5 stars, blue is 1 star). Specifically, the above visualization I constructed is a Voronoi diagram, where restaurants are visually segmented by their ratings. I also used machine learning and list comprehensions to model, filter, and organize the Yelp academic database (5 datasets, ~10 GB total).</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
@@ -190,27 +190,6 @@
                                             <img class="rounded-circle me-3" src="assets/school-3.png" width="40" height="40" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">CS 88: Computational Structures in Data Science</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Spam/Ham -->
-                        <div class="col-lg-6 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="assets/ds-cs-projects/spam-ham-1.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge text-black bg-neon bg-gradient rounded-pill mb-2">ML</div><div class="badge text-black bg-neon bg-gradient rounded-pill mx-2 mb-2">NLP</div>
-                                    <a class="fw-bolder a-hide-underline link-dark stretched-link"><div class="h5 card-title mb-3">Spam/Ham Email Classification</div></a>
-                                    <p class="card-text mb-2">In Python, I performed feature engineering, logistic regression, and cross validation to develop a classifier and distinguish between spam and non-spam emails with a 92% final accuracy. I used Python libraries/packages such as Scikit-learn/SKLearn, SciPy, NLTK, Pandas, RegEx, Seaborn, and Matplotlib.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="assets/school-3.png" width="40" height="40" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">DS 100: Principles & Techniques of Data Science</div>
                                             </div>
                                         </div>
                                     </div>
@@ -238,6 +217,49 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Food Safety -->
+                        <div class="col-lg-6 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/ds-cs-projects/food-safety.png" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge text-black bg-neon bg-gradient rounded-pill mb-2">EDA</div><div class="badge text-black bg-neon bg-gradient rounded-pill mx-2 mb-2">DATA CLEANING</div>
+                                    <a class="fw-bolder a-hide-underline link-dark stretched-link"><div class="h5 card-title mb-3">Food Safety</div></a>
+                                    <p class="card-text mb-2">In Python, I investigate restaurant food safety scores for restaurants in San Francisco, from scores and violation data made available by the <a href="https://data.sfgov.org/Health-and-Social-Services/Restaurant-Scores-LIVES-Standard/pyih-qa8i">San Francisco Department of Public Health</a>. The main goal of this project was to walk through the process of Data Cleaning and EDA using Pandas Python package. Overall, I learned the following from this project: the ability to read csv files using Pandas, the ability to work with data at different levels of granularity, the ability to identify the type of data collected (missing values, anomalies, etc.), and an understanding for exploring characteristics and distributions of individual variables.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle me-3" src="assets/school-3.png" width="40" height="40" alt="..." />
+                                            <div class="small">
+                                                <div class="fw-bold">DS 100: Principles & Techniques of Data Science</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Spam/Ham -->
+                        <div class="col-lg-6 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/ds-cs-projects/spam-ham-1.png" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge text-black bg-neon bg-gradient rounded-pill mb-2">ML</div><div class="badge text-black bg-neon bg-gradient rounded-pill mx-2 mb-2">NLP</div>
+                                    <a class="fw-bolder a-hide-underline link-dark stretched-link"><div class="h5 card-title mb-3">Spam/Ham Email Classification</div></a>
+                                    <p class="card-text mb-2">In Python, I performed feature engineering, logistic regression, and cross validation to develop a classifier and distinguish between spam and non-spam emails with a 92% final accuracy. I used Python libraries/packages such as Scikit-learn/SKLearn, SciPy, NLTK, Pandas, RegEx, Seaborn, and Matplotlib.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle me-3" src="assets/school-3.png" width="40" height="40" alt="..." />
+                                            <div class="small">
+                                                <div class="fw-bold">DS 100: Principles & Techniques of Data Science</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         
                     </div>
                     
